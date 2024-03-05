@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+
+    
+
+    <script language="javascript">
+        const lunch = 200;
+        const hourly_rate = 200;
+        var hours = prompt("enter number of hours")
+        var basic_salary = hours * hourly_rate;
+        var gross_salary = basic_salary + lunch;
+        var tax = 0.3 * gross_salary;
+        var net = gross_salary - tax;
+        // document.write(net)
+        console.log(basic_salary)
+
+        document.write("basic salary = "+ basic_salary + "<br>");
+        document.write("gross salary = "+ gross_salary + "<br>");
+        document.write("tax = "+tax + "<br>");
+        document.write("net pay = "+ net + "<br>");
+
+
+    </script>
+</body>
+</html>
